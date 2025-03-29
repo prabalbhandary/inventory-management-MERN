@@ -64,9 +64,7 @@ server.use('/uploads', express.static(path.resolve('src', 'uploads')));
 
 
 // application routes 
-server.get('/', (req, res) => {
-    res.send("Hello developer !");
-});
+
 
 server.use('/api/v1/user', userRoutes);
 server.use('/api/v1/product', productRoutes)
